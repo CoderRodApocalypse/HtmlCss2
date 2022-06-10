@@ -1,0 +1,211 @@
+<!--Aplicando CSS InLine
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+</head>
+
+<body>
+    <h1 >Sobre a Barbearia Alura</h1>
+
+    <p >Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p style="font-size: 20px; text-align: center"><em>missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+    <p >Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</body>
+
+</html>
+-->
+
+<!--Aplicando CSS com a tag STYLE
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+    <style>
+        p {
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p style="font-size: 20px"><em>missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</body>
+
+</html>
+-->
+<!--Aplicando CSS a partir de um aquivo externo .css-->
+<!--
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="banner" src="banner.jpg">
+
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</body>
+
+</html>
+-->
+
+<!-- Nesta aula, aprendemos:
+
+Como reestruturar o nosso código, removendo os CSS inline e colocando-os no arquivo CSS externo
+Como criar um identificador para marcar especificamente um elemento
+Como fazer referência a esse identificador no CSS
+Como adicionar uma imagem à nossa página
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+Como se comporta um time de front-end hoje em dia -->
+<!--
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="banner" src="banner.jpg">
+    <div class="principal">
+        <h1>Sobre a Barbearia Alura</h1>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada
+            dia.
+        </p>
+
+        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </div>
+
+    <div class="beneficios">
+        <h2>Benefícios</h2>
+
+        <ul>
+            <li id="class">Atendimento aos Clientes</li>
+            <li id="class">Espaço Diferenciado</li>
+            <li id="class">Localização</li>
+            <li id="class">Profissionais Qualificados</li>
+        </ul>
+
+        <img src="beneficios.jpg" class="imagemBeneficios">
+
+    </div>
+</body>
+
+</html>
+-->
+<!-- Nesta aula, aprendemos:
+
+Nesta aula, aprendemos:
+
+A trabalhar com listas não-ordenadas e listas ordenadas
+Para cada um dos itens da lista, utilizamos a tag <li>
+O conceito das classes no CSS
+Elas servem para marcar itens, que são repetíveis
+Como referenciar uma classe no CSS
+Divisões de conteúdo, utilizando a tag <div>
+Os comportamentos inline e block -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png"></h1>
+
+            <nav>
+                <ul class="navega">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img id="banner" src="banner.jpg">
+    <div class="principal">
+        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada
+            dia.
+        </p>
+
+        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </div>
+
+    <div class="beneficios">
+        <h3 class="titulo-centralizado">Benefícios</h3>
+
+        <ul>
+            <li id="class">Atendimento aos Clientes</li>
+            <li id="class">Espaço Diferenciado</li>
+            <li id="class">Localização</li>
+            <li id="class">Profissionais Qualificados</li>
+        </ul>
+
+        <img src="beneficios.jpg" class="imagemBeneficios">
+
+    </div>
+</body>
+
+</html>
+<!--
+    Nesta aula, aprendemos:
+
+O conceito de cabeçalho da página e como criá-lo
+Que o cabeçalho da página deve ter mais destaque
+Que não é recomendado criar estilos usando tags
+O ideal é usarmos classes para tudo
+-->
